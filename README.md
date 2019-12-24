@@ -2,7 +2,7 @@
 
 ## What's in it ?
 
-This repository contains the ressources to build the Website ("https://timothytedaldi.github.io/# turlututu-chapeau-pointu/index.html") 
+This repository contains the ressources to build the Website ("https://timothytedaldi.github.io/turlututu-chapeau-pointu/index.html") 
 
 ## How was my time spent ?
 
