@@ -1,0 +1,161 @@
+body{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+/* Css Header */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }  
+li {
+    float: left;
+  }
+li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 16px;
+   text-decoration: none;
+} 
+li a:hover {
+   background-color: #111111;
+}
+li img{
+    width: 18%;
+    margin-left: 5%;
+}
+header,footer{
+    background-color: #333333;
+    color: white;
+}
+header li:last-child{
+    position: absolute;
+    right: 0;
+    top : 0;
+}
+/* Css Section 1 */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #1e93cc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    grid-column-gap: 30%;
+  }
+.grid-container .grid-part1 img{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-container .grid-part2 img{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 30px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    border-radius: 12px;
+  }
+/* Css Section 2 */
+.Intersection {
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+h2{
+    color: black;
+    font-size: 40px;
+}
+/* Css Section 3 */
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #1e93cc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    grid-column-gap: 50px;
+  }
+.grid-container2 h3{
+    color: white;
+    font-size: 20px;
+}
+.grid-container2 p{
+    color: rgb(211, 210, 210);
+    font-size: 18px;
+}
+/* Css Section 4 */
+h4{
+    color: rgb(49, 49, 49);
+    font-size: 30px;
+}
+/* Css Section 5 */
+.item1  { grid-area: i1;}
+.item2  { grid-area: i2;}
+.item3  { grid-area: i3;}
+.item4  { grid-area: i4;}
+.item5  { grid-area: i5;}
+.item6  { grid-area: i6;}
+.item7  { grid-area: i7;}
+.grid-container-images{
+    display:grid;
+    grid-template-areas :
+    'i1 i2 i3 i4 i5 i6'
+    'i7 i7 i7 i7 i7 i7';
+    grid-gap: auto;
+    background-color: #eeeeee;
+    padding: 30px;
+}
+.grid-container-images > section {
+    text-align: center;
+    padding: 10px 0;
+}
+.grid-container-images img{
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-container-images .item7{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Css Section 6 */
+.Intersection-button {
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}  
+.b1 {background-color: #165882;}
+.b2 {background-color: #e99002;}
+
+/* Footer */
+footer{
+    display:flex;
+    justify-content: center;
+}    
+/* notif */
+.notification{
+    position: fixed;
+    right:0;
+    bottom:0;
+    background-color: rgba(255, 255, 255, 0);
+    border:none;
+}
+.notification img{
+    border-radius: 50%;
+}
