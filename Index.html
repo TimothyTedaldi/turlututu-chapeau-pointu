@@ -3,27 +3,40 @@
     <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="Normalize.css">
-        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Description" content="Ceci est un site réalisé par le magnifique, le grand, le génial, Timothy Tedaldi">
     </head>
 <!-- --------------------------------------Dbt Header------------------------------------------------------ -->
      <body>
         <header>
-            <nav>
-                <ul>
-                    <!-- ici l'image-->
-                    <li><img src="Img\restdblogo.png" alt="Logo was supposed to be here"></li>
-                    <li><a href="#Features">Features</a></li>
-                    <li><a href="#Docs">Docs</a></li> 
-                    <li><a href="#Blof">Blog</a></li>
-                    <li><a href="#Templates">Templates</a></li>
-                    <li><a href="#Pricing">Pricing</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                    <li class="Login"><a href="#Login">Sign Up</a></li>
+            <nav class="button-container">
 
-                </ul>
+                <div class="item" type="item-deb">
+                    <a><img src="Img\restdblogo.png" alt="Logo was supposed to be here"></a>
+                </div>
+                <div class="item">
+                    <a href="#Features">Features</a>
+                </div>
+                <div class="item">
+                    <a href="#Docs">Docs</a> 
+                </div>
+                <div class="item" class="item">
+                    <a href="#Blof">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="#Templates">Templates</a>
+                </div>
+                <div class="item">
+                    <a href="#Pricing">Pricing</a>
+                </div>         
+                <div class="item">
+                    <a href="#Contact">Contact</a>
+                </div>                    
+                <div class="item" type="item-fin">
+                    <a href="#Login">Sign Up</a>
+                </div>       
+
             </nav>
         </header>
 <!-- --------------------------------------Dbt div1------------------------------------------------------ -->
@@ -36,7 +49,7 @@
                 <h1>    
                     The Plug and Play Database Service
                 </h1>
-                <button class="button b2" type="button" onclick="alert('Here is Start building')">
+                <button class="button-b2" type="button" onclick="alert('Here is Start building')">
                     Start building <strong>now</strong>>>
                 </button>
             </section>
@@ -110,14 +123,14 @@
         </section>
 <!-- --------------------------------------Dbt div6------------------------------------------------------ -->
         <section class="Intersection-button">
-            
-            <button class="button b1" type="button" onclick="alert('Here is Rest Api')"> 
+         
+            <button class="button-b1" type="button" onclick="alert('Here is Rest Api')"> 
                 Rest Api >>
             </button>
-            <button class="button b1" type="button" onclick="alert('Here is Docs')">
+            <button class="button-b1" type="button" onclick="alert('Here is Docs')">
                 Docs >>
             </button>
-            <button class="button b2" type="button" onclick="alert('Here is Start building')">
+            <button class="button-b2" type="button" onclick="alert('Here is Start building')">
                 Start building >>
             </button>
         </section>       

@@ -1,0 +1,306 @@
+@import url(assets/css/Normalize.css);
+/* line 2, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-left: 0;
+  margin-right: 0;
+  /* Exemple de variable*/
+  /* Mixin de notre bouton */
+  /* ICI LE HEADER */
+  /* ICI LA PREMIERE DIV */
+  /* LES INTERSECTIONS */
+  /* ICI LA TROISIEME DIV */
+  /* ICI LA CINQUIEME DIV */
+  /* ICI LA SIXIEME DIV */
+  /* ICI LE FOOTER */
+  /* notif */
+}
+
+/* line 22, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body header {
+  display: flexbox;
+  background-color: #333333;
+  flex-direction: row;
+}
+
+/* line 26, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body header .button-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  line-height: 40px;
+}
+
+/* line 32, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body header .button-container .item {
+  display: block;
+}
+
+/* line 34, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body header .button-container .item a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  flex-grow: 1;
+  padding: 30px;
+}
+
+/* line 42, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body header .button-container .item a:hover {
+  background-color: #111111;
+}
+
+/* line 45, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body header .button-container .item a img {
+  width: 100px;
+}
+
+/* line 49, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body header .button-container .item:first-child {
+  text-align: left;
+  flex-grow: 1;
+}
+
+/* line 53, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body header .button-container .item:last-child {
+  text-align: right;
+  flex-grow: 1;
+}
+
+/* line 61, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #1e93cc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+  grid-column-gap: 30%;
+}
+
+/* line 71, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .grid-container .grid-part1 img {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 78, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .grid-container .grid-part2 img {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 83, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .grid-container .grid-part2 .button-b2 {
+  border: none;
+  color: white;
+  padding: 30px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  border-radius: 12px;
+  background-color: #e99002;
+}
+
+/* line 89, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .Intersection {
+  background-color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 94, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .Intersection h2 {
+  color: black;
+  font-size: 40px;
+}
+
+/* line 98, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .Intersection h4 {
+  color: #313131;
+  font-size: 30px;
+}
+
+/* line 104, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #1e93cc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  grid-column-gap: 50px;
+}
+
+/* line 113, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .grid-container2 h3 {
+  color: white;
+  font-size: 20px;
+}
+
+/* line 117, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .grid-container2 p {
+  color: white;
+  font-size: 18px;
+}
+
+/* line 123, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .item1 {
+  grid-area: i1;
+}
+
+/* line 124, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .item2 {
+  grid-area: i2;
+}
+
+/* line 125, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .item3 {
+  grid-area: i3;
+}
+
+/* line 126, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .item4 {
+  grid-area: i4;
+}
+
+/* line 127, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .item5 {
+  grid-area: i5;
+}
+
+/* line 128, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .item6 {
+  grid-area: i6;
+}
+
+/* line 129, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .item7 {
+  grid-area: i7;
+}
+
+/* line 130, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .grid-container-images {
+  display: grid;
+  grid-template-areas: 'i1 i2 i3 i4 i5 i6' 'i7 i7 i7 i7 i7 i7';
+  grid-gap: auto;
+  background-color: #eeeeee;
+  padding: 30px;
+}
+
+/* line 138, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .grid-container-images > section {
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* line 142, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .grid-container-images img {
+  width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 148, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .grid-container-images .item7 {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 155, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .Intersection-button {
+  background-color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+/* line 160, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .Intersection-button .button-b1 {
+  border: none;
+  color: white;
+  padding: 30px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  border-radius: 12px;
+  background-color: #165882;
+}
+
+/* line 163, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .Intersection-button .button-b2 {
+  border: none;
+  color: white;
+  padding: 30px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  border-radius: 12px;
+  background-color: #e99002;
+}
+
+/* line 168, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body footer {
+  display: flex;
+  background-color: #333333;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* line 175, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body footer ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+/* line 180, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body footer ul li {
+  display: inline-flex;
+}
+
+/* line 182, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body footer ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* line 188, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body footer ul li a:hover {
+  background-color: #111111;
+}
+
+/* line 196, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .notification {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+/* line 202, ../Documents/GitHub/turlututu-chapeau-pointu/assets/scss/style.scss */
+body .notification img {
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

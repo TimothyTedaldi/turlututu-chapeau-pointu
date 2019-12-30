@@ -1,0 +1,206 @@
+
+body{
+    @import "assets/css/Normalize.css";
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+    /* Exemple de variable*/
+    $primary-color: white;
+    /* Mixin de notre bouton */
+    @mixin big-button ($button-color){
+        border: none;
+        color:$primary-color;
+        padding: 30px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 35px;
+        border-radius: 12px;
+        background-color: $button-color;
+    }
+    /* ICI LE HEADER */
+    header{
+        display: flexbox;
+        background-color: #333333;
+        flex-direction: row;
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: center;
+            line-height: 40px;
+            .item{
+                display: block;
+                a{
+                    text-decoration: none; 
+                    color:$primary-color;
+                    font-size: 20px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    flex-grow: 1;
+                    padding: 30px;
+                    &:hover {
+                        background-color: #111111;
+                    }
+                    img{
+                        width: 100px;
+                    }    
+                }
+                &:first-child{
+                   text-align: left;
+                   flex-grow: 1;
+                }
+                &:last-child{                   
+                    text-align: right;
+                    flex-grow: 1;
+                }
+            } 
+        }        
+    }
+    /* ICI LA PREMIERE DIV */
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: #1e93cc;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 15%;
+        padding-right: 15%;
+        grid-column-gap: 30%;
+        .grid-part1{
+            img{
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .grid-part2{
+            img{
+                width: 30%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .button-b2{
+                @include big-button(#e99002);
+            }
+        }
+    }
+    /* LES INTERSECTIONS */
+    .Intersection {
+        background-color:$primary-color;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        h2{
+            color: black;
+            font-size: 40px;
+        }
+        h4{
+            color: rgb(49, 49, 49);
+            font-size: 30px;
+        }
+    }
+    /* ICI LA TROISIEME DIV */
+    .grid-container2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: #1e93cc;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
+        grid-column-gap: 50px;
+        h3{
+            color: $primary-color;
+            font-size: 20px;
+        }
+        p{
+            color: $primary-color;
+            font-size: 18px;
+        }
+    }
+    /* ICI LA CINQUIEME DIV */
+    .item1  { grid-area: i1;}
+    .item2  { grid-area: i2;}
+    .item3  { grid-area: i3;}
+    .item4  { grid-area: i4;}
+    .item5  { grid-area: i5;}
+    .item6  { grid-area: i6;}
+    .item7  { grid-area: i7;}
+    .grid-container-images{
+        display:grid;
+        grid-template-areas :
+        'i1 i2 i3 i4 i5 i6'
+        'i7 i7 i7 i7 i7 i7';
+        grid-gap: auto;
+        background-color: #eeeeee;
+        padding: 30px;
+        &> section {
+            text-align: center;
+            padding: 10px 0;
+        }
+        img{
+            width: 60%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .item7{
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    /* ICI LA SIXIEME DIV */
+    .Intersection-button {
+        background-color:$primary-color;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        .button-b1{
+            @include big-button(#165882);
+        }
+        .button-b2{
+            @include big-button(#e99002);
+        }
+    } 
+    /* ICI LE FOOTER */
+    footer {
+        display: flex;
+        background-color: #333333;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        ul{
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+            li {
+                display: inline-flex;
+                a {
+                    display: block;
+                    color: $primary-color;
+                    text-align: center;
+                    padding: 16px;
+                    text-decoration: none;
+                    &:hover {
+                        background-color: #111111;
+                     }
+                }
+            }
+        } 
+    }
+    /* notif */
+    .notification{
+        position: fixed;
+        right:0;
+        bottom:0;
+        background-color: rgba(255, 255, 255, 0);
+        border:none;
+        img{
+            border-radius: 50%;
+        }    
+    }
+}
